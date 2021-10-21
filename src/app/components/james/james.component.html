@@ -1,0 +1,8 @@
+<h4>Infografía James</h4>
+<div *ngFor="let jugador2 of jugadores2">
+    <img src="{{jugador2.img}}" alt="">
+    <p>nombre: {{jugador2.nombre}} <br> bio: {{jugador2.bio}} <br> nacimiento: {{jugador2.nacimiento}}
+        <br> seleccion: {{jugador2.seleccion}} <br> equipo: {{jugador2.equipo}} </p>
+</div>
+<button type="button" class="btn btn-success" [routerLink]="['/Jugadores']">Home</button>
+<div class="limpiador"></div>

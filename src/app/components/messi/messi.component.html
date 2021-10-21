@@ -1,0 +1,8 @@
+<h4>Infografía Messi</h4>
+<div *ngFor="let jugador of jugadores">
+    <img src="{{jugador.img}}" alt="">
+    <p>nombre: {{jugador.nombre}} <br> bio: {{jugador.bio}} <br> nacimiento: {{jugador.nacimiento}}
+        <br> seleccion: {{jugador.seleccion}} <br> equipo: {{jugador.equipo}} </p>
+</div>
+<button type="button" class="btn btn-success" [routerLink]="['/Jugadores']">Home</button>
+<div class="limpiador"></div>
